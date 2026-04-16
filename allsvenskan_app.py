@@ -86,8 +86,7 @@ def scrape_footystats_xg() -> Optional[List[dict]]:
             })
 
         return teams if teams else None
-    except Exception as e:
-        st.error(f"FootyStats-virhe: {e}")
+    except Exception:
         return None
 
 
